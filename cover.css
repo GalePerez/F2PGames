@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@500&display=swap');
+
+* {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.navbar {
+  z-index: 1;
+}
+
+#myVideo {
+    z-index: 0;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+.content {
+    z-index: 2;
+    color: #d9ff01c2;
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    border-radius: 1rem;
+    
+  }
+
+
+  h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 10vw;
+  }
+
+  h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5vw;
+  }
+
+h4 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3vw;
+}
+
+h6 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5vw;
+}
+
+  #myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }
