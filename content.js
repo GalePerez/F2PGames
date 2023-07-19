@@ -18,7 +18,7 @@ const url = 'https://free-to-play-games-database.p.rapidapi.com/api/games';
 
 						data.forEach(element => {
 
-							if (element.id <= 12) {
+							if (element.id <= 18) {
 								const discoverImage = document.getElementById('game-container');
 								const discoverContent = document.createElement('div')
                                 // discoverContent = document.classList.add('row')
