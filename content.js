@@ -15,8 +15,11 @@ const url = 'https://free-to-play-games-database.p.rapidapi.com/api/games';
 							console.log('error');
 						}
 					}).then (data => {
+
 						data.forEach(element => {
-              console.log(element.title)
+              const content = document.getElementById('game-container').innerHTML = `<img src="${element.thumbnail}">`;
+              const gameContent = document.getElementById('game-container');
+              gameContent.appendChild(content);
 
 						});
 					});
