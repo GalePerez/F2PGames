@@ -21,8 +21,10 @@ const url = 'https://free-to-play-games-database.p.rapidapi.com/api/games';
 							if (element.id <= 12) {
 								const discoverImage = document.getElementById('game-container');
 								const discoverContent = document.createElement('div')
+                                // discoverContent = document.classList.add('row')
+
 								discoverContent.innerHTML = ` 
-									<div class="card text-bg-dark">
+									<div class="card text-bg-dark ">
 										<img src="${element.thumbnail}" class="card-img">									
 									</div>`;
 

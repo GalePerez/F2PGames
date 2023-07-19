@@ -1,3 +1,18 @@
 .carousel {
     margin-top: 20vh;
 }
+
+
+.game-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img {
+    width: 25rem;
+    height: 12rem;
+    margin: 10px;
+}
+ 
