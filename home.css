@@ -10,9 +10,12 @@
     align-items: center;
 }
 
+.game-content {
+    margin: 10px;
+}
+
 .card-img {
     width: 25rem;
     height: 12rem;
-    margin: 10px;
 }
  

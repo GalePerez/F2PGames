@@ -21,7 +21,7 @@ const url = 'https://free-to-play-games-database.p.rapidapi.com/api/games';
 							if (element.id <= 18) {
 								const discoverImage = document.getElementById('game-container');
 								const discoverContent = document.createElement('div')
-                                // discoverContent = document.classList.add('row')
+								discoverContent.classList.add('game-content')
 
 								discoverContent.innerHTML = ` 
 									<div class="card text-bg-dark ">
