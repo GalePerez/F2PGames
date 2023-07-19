@@ -1,0 +1,8 @@
+.browse {
+    display: flex;
+    justify-content: space-between;
+}
+
+#genre {
+    margin-top: 10px;
+}
