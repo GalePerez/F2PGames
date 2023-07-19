@@ -32,23 +32,4 @@ const url = 'https://free-to-play-games-database.p.rapidapi.com/api/games';
 							}
 
 						});
-
-						//carousel content
-
-						data.forEach(element => {
-							if(element.id <= 12) {
-								const carouselItem = document.getElementById('carousel-inner');
-								carouselItem.innerHTML = `
-								<div class="carousel-item active" data-bs-interval="10000">
-									<img src="${element.thumbnail}" class="d-block" width="100%" height="700px">
-									<div class="carousel-caption d-none d-md-block">
-										<h5>${element.title}</h5>
-										<p>${element.short_description}</p>
-									</div>
-								</div>`;
-
-								carouselItem.appendChild('carousel-inner');
-							}
-							
-						})
 					});
