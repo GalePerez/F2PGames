@@ -17,9 +17,17 @@ const url = 'https://free-to-play-games-database.p.rapidapi.com/api/games';
 					}).then (data => {
 
 						data.forEach(element => {
-              const content = document.getElementById('game-container').innerHTML = `<img src="${element.thumbnail}">`;
-              const gameContent = document.getElementById('game-container');
-              gameContent.appendChild(content);
+
+							if (element.id <= 12) {
+								const discoverImage = document.getElementById('game-container');
+								const discoverContent = document.createElement('div')
+								discoverContent.innerHTML = ` 
+									<div class="card text-bg-dark">
+										<img src="${element.thumbnail}" class="card-img">									
+									</div>`;
+
+								discoverImage.appendChild(discoverContent);
+							}
 
 						});
 					});
