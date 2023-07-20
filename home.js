@@ -24,7 +24,7 @@ const fetchGames = () => {
 								const discoverContainer = document.createElement('div')
 								discoverContainer.classList.add('game-content', 'card', 'text-bg-dark')
 								const gameImage = document.createElement('img');
-								gameImage.classList.add('card-img');
+								gameImage.classList.add('card-img', 'rounded-4');
 								gameImage.setAttribute('src',`${element.thumbnail}`);
 								discoverImage.appendChild(discoverContainer);
 								discoverContainer.appendChild(gameImage);
