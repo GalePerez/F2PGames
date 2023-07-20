@@ -1,12 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Russo+One&display=swap');
+
 /* Color codes 
 #6c00da
 #e0d625
 */
+* {
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+
+.gamemonth {
+    z-index: 3;
+    position: absolute;
+    top: 35vh;
+    left: 5vh;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 9vh;
+}
 
 
 
 .carousel {
-    margin-top: 20vh;
+    margin-top: 5vh;
 }
 
 
@@ -22,14 +47,15 @@
 }
 
 .card-img {
-    width: 29rem;
-    height: 16rem;
+    width: 22rem;
+    height: 13rem;
 }
 
 .genre-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 
@@ -50,6 +76,8 @@
     border-radius: 20px;
     cursor: pointer;
     font-weight: bold;
+    margin: 1vh;
+    width: 8rem;
    }
    
   .genre:hover {
