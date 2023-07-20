@@ -17,7 +17,6 @@ const fetchGames = () => {
 						}
 					}).then (data => {
 						// discover content
-						console.log('Hello WOrld')
 						data.forEach(element => {
 
 							if (element.id <= 18) {
