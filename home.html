@@ -14,15 +14,18 @@
         
     </header>
     <main>
-        <h1 class="text-light">Game of the Month</h1>
+      <div class="container1">
+        <h1 class="text-light gamemonth">F2P Games</h1>
+        <h2>Catalogue of Free-to-Play Games right here</h2>
 
-        <a href="#">
-            <picture>
-                <img src="./gamemonth.jpg" width="100%" height="20%">
-            </picture>
-        </a>
+          <picture class="cover-photo">
+            <source media="(min-width:780px)" srcset="./photo/home-desktop.png" width="100%">
+            <source media="(min-width:520px)" srcset="./photo/home-tablet.png" width="100%">
+            <img src="./photo/home-mobile.png" class="welcome-photo w-100"/>
+          </picture>
+      </div>
 
-        <h1 class="text-light">Popular Games</h1>
+        <h1 class="text-light popular-text">Popular Games</h1>
 
         <div id="carouselExampleDark" class="carousel " data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -34,38 +37,58 @@
             </div>
             <div class="carousel-inner carousel-fade" id="carousel-inner">
               <div class="carousel-item active">
-                <img src="https://i.ytimg.com/vi/GKXS_YA9s7E/maxresdefault.jpg" class="d-block w-100" alt="...">
+                <picture>
+                  <source media="(min-width:780px)" srcset="./photo/popular1.png" width="100%">
+                  <source media="(min-width:520px)" srcset="./photo/popular1.png" width="100%">
+                  <img src="./photo/mobile/valorant.jpg" class="welcome-photo w-100"/>
+                </picture>
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Overwatch 2</h5>
-                  <p>A hero-focused first-person team shooter from Blizzard Entertainment</p>
+                  <h5>Valorant</h5>
+                  <p>Valorant is a team-based first-person tactical hero shooter set in the near future. Players play as one of a set of Agents, characters based on several countries and cultures around the world.</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="https://sm.ign.com/ign_ap/screenshot/default/image001-1_pvfy.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Diablo Immortal</h5>
-                  <p>Built for mobile and also released on PC, Diablo Immortal fills in the gaps between Diablo II and III in an MMOARPG environment</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="https://images.ctfassets.net/umhrp0op95v1/VvjFjkl41oG52Nf71hZbr/e39168a3549882dd41f8b23187aa576c/LA_Y2_KA_Share_1200x630.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Lost Ark</h5>
-                  <p>Smilegate’s free-to-play multiplayer ARPG is a massive adventure filled with lands waiting to be explored, people waiting to be met, and an ancient evil waiting to be destroyed</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="https://wstatic-prod.pubg.com/web/live/static/og/img-og-pubg.jpg  " class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>PUBG: BATTLEGROUNDS</h5>
-                  <p>Get into the action in one of the longest running battle royale games PUBG Battlegrounds</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_GenshinImpact_miHoYoLimited_S1_2560x1440-91c6cd7312cc2647c3ebccca10f30399" class="d-block w-100" alt="...">
+                <picture>
+                  <source media="(min-width:780px)" srcset="./photo/popular2.png" width="100%">
+                  <source media="(min-width:520px)" srcset="./photo/popular2.png" width="100%">
+                  <img src="./photo/mobile/genshinimpact.png" class="welcome-photo w-100"/>
+                </picture>
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Genshin Impact</h5>
-                  <p>If you’ve been looking for a game to scratch that open-world action RPG itch, one with perhaps a bit of Asian flair, then you’re going to want to check out miHoYo’s Genshin Impact</p>
+                  <p>Genshin Impact is an open-world, action role-playing game that allows the player to control one of four interchangeable characters in a party.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <picture>
+                  <source media="(min-width:780px)" srcset="./photo/popular3.png" width="100%">
+                  <source media="(min-width:520px)" srcset="./photo/popular3.png" width="100%">
+                  <img src="./photo/mobile/pubg.jpg" class="welcome-photo w-100"/>
+                </picture>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>PUBG: Battlegrounds</h5>
+                  <p>PUBG is a player versus player shooter game in which up to one hundred players fight in a battle royale, a type of large-scale last man standing deathmatch where players fight to remain the last alive.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <picture>
+                  <source media="(min-width:780px)" srcset="./photo/popular4.png" width="100%">
+                  <source media="(min-width:520px)" srcset="./photo/popular4.png" width="100%">
+                  <img src="./photo/mobile/overwatch.png" class="welcome-photo w-100"/>
+                </picture>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Overwatch</h5>
+                  <p>Overwatch is a multimedia franchise centered on a series of online multiplayer first-person shooter (FPS) video games developed by Blizzard Entertainment.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <picture>
+                  <source media="(min-width:780px)" srcset="./photo/popular5.png" width="100%">
+                  <source media="(min-width:520px)" srcset="./photo/popular5.png" width="100%">
+                  <img src="./photo/mobile/diabloimmortal.png" class="welcome-photo w-100"/>
+                </picture>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Diablo Immortal</h5>
+                  <p>Diablo Immortal is a mobile MMOARPG (massively multiplayer online, action–role-playing game) for mobile devices and PC.</p>
                 </div>
               </div>
               
@@ -80,7 +103,7 @@
             </button>
           </div>
 
-          <h1 class="text-light">Genres:</h1>
+          <h1 class="text-light"> Browse by genre</h1>
           <br>
           <div class="genre-container">
             <button class="genre">
@@ -141,7 +164,7 @@
               <span></span>
               <span></span>
               <span></span>
-              <span></span> Card Games
+              <span></span> CardGames
             </button>
           </div>
           
