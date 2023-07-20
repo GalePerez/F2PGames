@@ -5,6 +5,7 @@ const genres = ['action', 'adventure', 'fps-shooter', 'fighting',
   
 
 for (let i=0; i < genres.length; i++) {
+
   const genreList = document.getElementById('genre-list');
   const buttonGenre = document.createElement('button');
   buttonGenre.classList.add('btn', 'btn-primary');
@@ -12,11 +13,35 @@ for (let i=0; i < genres.length; i++) {
   buttonGenre.textContent = genres[i];
 };
 
-// game content
+//genre dropdown 
 
-// const gameContainer = document.createElement('div');
-// gameContainer.setAttribute('id', 'all-games')
-// const allGames = getElementById('all-games')
+const genDrop = document.getElementById('genre-dropdown')
+const titleElement = document.createElement('h1');
+titleElement.classList.add('text-light');
+const genContainer = document.createElement('div');
+genContainer.classList.add('text-light');
+const labelElement = document.createElement('label');
+labelElement.setAttribute('for', 'genre');
+labelElement.textContent = 'Genres: ';
+const selectElement = document.createElement('select');
+selectElement.setAttribute('id', 'genre');
+selectElement.setAttribute('name', 'genre');
+
+//Append Elements
+genDrop.appendChild(titleElement);
+genDrop.appendChild(genContainer);
+genContainer.appendChild(labelElement);
+genContainer.appendChild(selectElement);
+
+for (let gen=0; gen < genres.length; gen++) {
+
+    const optionElement = document.createElement('option');
+    optionElement.textContent = genres[gen];
+    optionElement.setAttribute('value', genres[gen])
+    selectElement.appendChild(optionElement);  
+}
+
+// game content
 
 const url = 'https://free-to-play-games-database.p.rapidapi.com/api/games';
 const options = {
