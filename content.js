@@ -1,4 +1,5 @@
-const url = 'https://free-to-play-games-database.p.rapidapi.com/api/games';
+const fetchGames = () => {
+	const url = 'https://free-to-play-games-database.p.rapidapi.com/api/games';
 			const options = {
 				method: 'GET',
 				headers: {
@@ -20,16 +21,22 @@ const url = 'https://free-to-play-games-database.p.rapidapi.com/api/games';
 
 							if (element.id <= 18) {
 								const discoverImage = document.getElementById('game-container');
-								const discoverContent = document.createElement('div')
-								discoverContent.classList.add('game-content')
+								const discoverContainer = document.createElement('div')
+								discoverContainer.classList.add('game-content', 'card', 'text-bg-dark')
+								const gameImage = document.createElement('img');
+								gameImage.classList.add('card-img');
+								gameImage.setAttribute('src',`${element.thumbnail}`);
 
-								discoverContent.innerHTML = ` 
-									<div class="card text-bg-dark ">
-										<img src="${element.thumbnail}" class="card-img">									
-									</div>`;
-
-								discoverImage.appendChild(discoverContent);
+								discoverImage.appendChild(discoverContainer);
+								discoverContainer.appendChild(gameImage);
 							}
 
 						});
 					});
+};
+
+
+
+
+
+fetchGames();
