@@ -16,40 +16,42 @@ body {
 .container1 {
     position: relative;
     text-align: left;
-    color: #e0d625;
+    color: rgba(255, 242, 64, 0.829);
 }
 
 .cover-photo {
     opacity: 50%;
 }
 
-.popular-text {
-    font-family: 'Bebas Neue', sans-serif;
-    text-align: center;
-    font-size: 5vh;
-    padding: 2vh;
-}
 
-
-.gamemonth {
+.f2p-text {
     z-index: 3;
     position: absolute;
-    top: 20vh;
-    left: 5vh;
+    top: 30vh;
+    left: 1vh;
     font-family: 'Orbitron', sans-serif;
-    font-size: 9vh;
+    font-size: 10vh;
+    text-align: center;
 
 }
 
 h2 {
     z-index: 3;
     position: absolute;
-    top: 40vh;
+    top: 55vh;
     left: 5vh;
     font-family: 'Orbitron', sans-serif;
     font-size: 3vh;
+    text-align: center;
 }
 
+.popular-text {
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    font-size: 8vh;
+    padding: 2vh;
+    color: #e0d625;
+}
 
 .game-container {
     display: flex;
@@ -74,6 +76,14 @@ h2 {
     flex-wrap: wrap;
 }
 
+.genre-text {
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    font-size: 8vh;
+    padding: 2vh;
+    color: #e0d625;
+}
+
 
 
 /* ----GENRE BUTTON --- */
@@ -82,7 +92,7 @@ h2 {
     padding: .4em 1.8em;
     outline: none;
     border: 1px solid #303030;
-    background: #212121;
+    background: #2e1b4e;
     color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -177,3 +187,11 @@ h2 {
     transition-delay: none;
    }
    
+
+.discover-text {
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    font-size: 8vh;
+    padding: 2vh;
+    color: #e0d625;
+}
