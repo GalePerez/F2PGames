@@ -10,6 +10,10 @@
     margin: 0;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .navbar {
     display: flex;
     flex-direction: column;
@@ -507,7 +511,7 @@ h2 {
     }
 
     .genre-text {
-        font-size: 16vh;
+        font-size: 12vh;
     }
 
     .footer {
@@ -519,6 +523,23 @@ h2 {
     .footer-text {
         font-size: 1.2vw;
     }
+
+    ::-webkit-scrollbar{
+        width: 14px;
+      }
+      
+      ::-webkit-scrollbar-track{
+        border-radius: 5px;
+        box-shadow: inset .7px .7px 1px #4b4b4b;
+      }
+      
+      ::-webkit-scrollbar-thumb{
+        border-radius: 5px;
+      background: #fbff00;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #e0d625, #e0d625);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #e0d625, #e0d625); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      
+      }
 
 }
  @media screen and (min-width:519px) {

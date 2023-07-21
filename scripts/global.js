@@ -1,7 +1,7 @@
 const navBar = () => {
 	const bodyContainer = document.getElementById('navbody')
 	bodyContainer.innerHTML = `
-		<a href="#" class="logo1 navbar-brand ">
+		<a href="./index.html" class="logo1 navbar-brand ">
 		<img src="./photo/logo.png" alt="logo" width="160" height="40">
 		</a>
 		<button class="navbar-toggler" type="button"  data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -13,13 +13,13 @@ const navBar = () => {
 				<nav class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav gap-1 text-center fw-bold">
 						<li class="nav-item">
-								<a href="./index.html" class="nav-link text-uppercase home" aria-current="page">Home</a>
+								<a href="./home.html" class="nav-link text-uppercase home">Home</a>
 						</li>
 						<li class="nav-item">
-								<a href="#" class="nav-link text-uppercase discover">Discover</a>
+								<a href="#game-container" class="nav-link text-uppercase discover">Discover</a>
 						</li>
 						<li class="nav-item">
-								<a href="#about" class="nav-link text-uppercase">Browse</a>
+								<a href="./gamelist.html" class="nav-link text-uppercase">Browse</a>
 						</li>
 					</ul>	
 				<form action="">
