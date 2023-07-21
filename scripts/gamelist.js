@@ -1,16 +1,18 @@
 //genre-list button
-const genres = ['action', 'adventure', 'fps-shooter', 'fighting',
-  'strategy', 'sports', 'role-playing', 'puzzle', 'simulator', 'survival'];
 
-  
+const genres = ['MMO', 'MMORPG', 'Shooter', 'Strategy', 'MOBA',
+  'Racing' ,'Sports', 'Social', 'Fighting', 'Cardgames'];
+
+
 
 for (let i=0; i < genres.length; i++) {
 
-  const genreList = document.getElementById('genre-list');
-  const buttonGenre = document.createElement('button');
-  buttonGenre.classList.add('btn', 'btn-primary');
-  genreList.appendChild(buttonGenre);
-  buttonGenre.textContent = genres[i];
+const genreList = document.getElementById('genre-list');
+const buttonGenre = document.createElement('button');
+buttonGenre.classList.add('btn', 'btn-primary');
+genreList.appendChild(buttonGenre);
+buttonGenre.textContent = genres[i];
+
 };
 
 //genre dropdown 
@@ -66,4 +68,26 @@ fetch (url,options)
       allIcon.appendChild(iconContainer);
       iconContainer.appendChild(cardImage);
     });
-  })
+  });
+
+  // filter by genre
+
+  const fightingGenre = () => {
+    fetch(url,options)
+      .then((res) => res.json())
+      .then(data => {
+        data.forEach(element => {
+          if (element.genre === 'Fighting') {
+            const allIcon = document.getElementById('all-icons')
+            const iconContainer = document.createElement('div')
+            iconContainer.classList.add('card');
+            const cardImage = document.createElement('img');
+            cardImage.classList.add('card-img');
+            cardImage.setAttribute('src',`${element.thumbnail}`);
+
+            allIcon.appendChild(iconContainer);
+            iconContainer.appendChild(cardImage);
+          }
+        })
+      })
+  }
