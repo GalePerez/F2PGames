@@ -86,7 +86,7 @@ const mmoGenre = () => {
 
           const mmoList = document.getElementById('mmo-list')
           const mmoDiv = document.createElement('div');
-          mmoDiv = document.classList.add('mmo-card')
+          mmoDiv.classList.add('mmo-card')
           mmoDiv.classList.add('card');
           const mmoImage = document.createElement('img');
           mmoImage.classList.add('card-img')
@@ -94,6 +94,7 @@ const mmoGenre = () => {
           
           mmoList.appendChild(mmoDiv);
           mmoDiv.appendChild(mmoImage);
+          
         }
       })
     })
@@ -115,7 +116,8 @@ for (let i=0; i < genres.length; i++) {
   buttonGenre.classList.add('btn', 'btn-primary');  
   genreList.appendChild(buttonGenre);
   buttonGenre.textContent = genres[i]; 
-  buttonGenre.onclick = mmoGenre;
+  buttonGenre.onclick = mmoGenre
+  
 
 };
 
