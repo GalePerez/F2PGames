@@ -72,7 +72,7 @@ fetch (url,options)
 
   // filter by genre
 
-  const fightingGenre = (genres) => {
+  const fightingGenre = () => {
     fetch(url,options)
       .then((res) => res.json())
       .then(data => {
