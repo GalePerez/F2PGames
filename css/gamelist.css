@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+}
+
 .browse {
     display: flex;
     justify-content: space-between;
@@ -23,3 +31,191 @@
     height: 10rem;
 
 }
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    font-size: 3vh;
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+}
+
+
+.navbar-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 1vh;
+}
+
+.discover {
+    background-color: #6c00da;
+    border-radius: 15px;
+}
+
+.nav-item {
+    color: #e0d625;
+}
+
+.nav-item:hover {
+    background-color: #6c00da;
+    border-radius: 15px;
+}
+
+
+/*------Search START------*/
+form{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid white;
+    padding: 5px;
+    margin-top: 5vh;
+}
+
+input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.fa{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: #07051a;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+}
+
+form:hover,
+form:valid{
+    width: 200px;
+    cursor: pointer;
+}
+
+form:hover input,
+form:valid input{
+    display: block;
+}
+
+form:hover .fa,
+form:valid .fa{
+    background: #07051a;
+    color: white;
+}
+
+
+@media screen and (min-width:781px){
+    /* -----------NAVBAR-------- */
+    .navbar {
+        display: flex;
+        justify-content: center;
+        height: 11vh;
+        flex-direction: row;
+    }
+    
+    .navbar-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    form {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-40%,-40%);
+    }
+
+    .nav-item {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 2.5vh;
+    }
+
+    /* --------NAVBAR END------- */
+
+    .f2p-text {
+        font-family: 'Press Start 2P', cursive;
+        font-size: 10vh;
+        top: 8vh;
+        left: 40vh;
+        right: 40vh;
+        color: rgba(255, 255, 255, 0.966);
+        text-align: center;
+    }
+
+    h2 {
+        display: none;
+    }
+
+    .container1 {
+        display: none;
+    }
+
+    .popular-text {
+        font-size: 16vh;
+    }
+
+    .discover-text {
+        font-size: 16vh;
+    }
+
+    .genre-text {
+        font-size: 12vh;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .footer-text {
+        font-size: 1.2vw;
+    }
+
+    ::-webkit-scrollbar{
+        width: 14px;
+      }
+      
+      ::-webkit-scrollbar-track{
+        border-radius: 5px;
+        box-shadow: inset .7px .7px 1px #4b4b4b;
+      }
+      
+      ::-webkit-scrollbar-thumb{
+        border-radius: 5px;
+      background: #fbff00;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #e0d625, #e0d625);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #e0d625, #e0d625); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      
+      }
+
+
+}
+ 

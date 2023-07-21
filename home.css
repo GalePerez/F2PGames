@@ -1,0 +1,576 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.p2 { 
+  display: block;
+}
+
+.logo1 {
+    padding-left: 3vw;
+}
+
+.welcome-photo {
+    width: 100vw;
+    height: 60vh;
+    filter: opacity(40%);
+}
+
+.cover {
+    position: relative;
+    color: white;
+}
+
+.p1 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    font-size: 23px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: #f7ebd4;
+    top: 55%;
+    left: 40%;
+}
+
+.p2 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: white;
+    top: 72%;
+    left: 40%;
+}
+
+.button-center {
+    display: flex;
+    justify-content: center;
+}
+
+/* BOOK NOW BUTTON */
+.button-1 {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #7a2012;
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: #f7ebd4;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-width: 0;
+    outline: none;
+    padding: 9px 2px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 40%;
+    will-change: transform;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: #f7ebd4;
+    top: 89%;
+    left: 50%;
+}
+
+  
+  .button-1:disabled {
+    pointer-events: none;
+  }
+  
+  .button-1:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 89%;
+    left: 50%;
+  }
+  
+  .button-1:active {
+    box-shadow: none;
+    transform: translateY(0);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 89%;
+    left: 50%;
+  }
+/* BOOK NOW BUTTON END*/
+
+.container1 {
+  margin: 5px;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+
+.about-us-title {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  font-size: large;
+  background-color: #7a2012;
+  color: #f7ebd4;
+
+}
+
+.about-us-text {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: white;
+}
+
+.services-text {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: white;
+
+}
+
+.services-list {
+  font-family: 'Manrope', sans-serif;
+  font-size: medium;
+
+  color: white;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-2-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  margin-bottom: 20px;
+}
+
+/*View More Button Start*/
+.button-2 {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #7a2012;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #f7ebd4;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-width: 0;
+  outline: none;
+  padding: 9px 2px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 20vw;
+  will-change: transform;
+}
+
+
+.button-2:disabled {
+  pointer-events: none;
+}
+
+.button-2:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-2:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+/*View More Button end*/
+
+.book-now-text {
+  color: white;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+}
+
+.book-now-text2 {
+  color: white;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: large;
+  text-align: center;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+}
+
+
+.button-3-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* BOOK NOW BUTTON */
+.button-3 {
+  background: #7a2012;
+  border-radius: 11px;
+  box-sizing: border-box;
+  color: #f7ebd4;
+  cursor: pointer;
+  display: flex;
+  font-family: Mija,-apple-system,BlinkMacSystemFont,Roboto,"Roboto Slab","Droid Serif","Segoe UI",system-ui,Arial,sans-serif;
+  font-size: 1.15em;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 33.4929px;
+  padding: .8em 1em;
+  text-align: center;
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  text-shadow: rgba(0, 0, 0, .3) 1px 1px 1px;
+  text-underline-offset: 1px;
+  transition: all .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 50vw;
+  word-break: break-word;
+  border: 0;
+  display: flex;
+}
+
+.button-3:active,
+.button-3:focus {
+  border-bottom-style: none;
+  border-color: #dadada;
+  box-shadow: rgba(0, 0, 0, .3) 0 3px 3px inset;
+  outline: 0;
+}
+/* BOOK NOW BUTTON END */
+
+h2 {
+  color: white;
+}
+
+h6 {
+  color: white;
+}
+
+
+
+.button-4-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vh;
+}
+
+/* Send BUTTON */
+.button-4 {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #7a2012;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #f7ebd4;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-width: 0;
+  outline: none;
+  padding: 9px 2px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 40%;
+  will-change: transform;
+}
+
+
+.button-4:disabled {
+  pointer-events: none;
+}
+
+.button-4:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-4:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+/* Send BUTTON End*/
+
+.contact-info {
+  color: white;
+  margin: 20px;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: medium;
+
+}
+
+
+.logo-end {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.end {
+  color: white;
+  text-align: center;
+  font-size: small;
+}
+@media screen and (min-width:900px){
+  body {
+    overflow-x: hidden;
+  }
+
+  .welcome-photo {
+      width: 100vw;
+      height: 90vh;
+      filter: opacity(30%);
+  }
+
+  .nav-item {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+  }
+
+  .home {
+    color: #eedab5;
+  }
+
+  .nav-link:hover {
+    background-color: #f7ebd4;
+    color: #7a2012;
+    border-radius: 5px;
+  }
+
+  .home {
+    margin-left: 40vw;
+  }
+  
+  .p1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    font-size: 7.5vw;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: #f7ebd4;
+    top: 60%;
+    left: 35vw;
+  }
+
+  .p1:hover {
+    transition: all 0.3s cubic-bezier(0.000, 0.000, 0.230, 1);
+    background-position: 0%;
+  }
+  
+  .p2 { 
+    display: none;
+  }
+
+  .button-1 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    font-size: 35px;
+    width: 20vw;
+    height: 10vh;
+  }
+
+  .container1 {
+  margin: 5px;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+
+  .about-us-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 5vw;
+    color: #f7ebd4;
+    padding: 20px;
+    background-color: #212529;
+  }
+
+  .about-us-text {
+    font-size: 1.5vw;
+  }
+
+  .services-text {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    font-size: 4vw;
+    color: #f7ebd4;
+    text-align: center;
+  }
+
+  .services-list {
+    font-size: 1.5vw;
+    margin-left: 30vw;
+    margin-right: auto;
+  }
+
+  .container1 {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .gallery {
+    line-height:0;
+    -webkit-column-count:4; /* split it into 5 columns */
+    -webkit-column-gap:5px; /* give it a 5px gap between columns */
+    -moz-column-count:4;
+    -moz-column-gap:5px;
+    column-count:4;
+    column-gap:5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+
+ .gallery img {
+  width: 100% !important;
+  height: auto !important;
+  margin-bottom:5px; /* to match column gap */
+  filter: grayscale(100%);
+  }
+
+  .gallery img:hover {
+    filter:none;
+  }
+
+  .button-2 {
+  width: 20vw;
+  height: 10vh;
+  font-size: 25px;
+  }
+
+
+  .book-now {
+    width: 80vw;
+    margin: auto;
+    margin-top: 5vh;
+    left: auto;
+    right: auto;
+  }
+
+  .book-now-text {
+    font-size: 50px;
+  }
+
+  .book-now-text:hover {
+    color: #f7ebd4;
+    font-size: 60px;
+  }
+
+  .button-3 {
+    width: 20vw;
+    height: 10vh;
+    font-size: 2vw;
+  }
+
+  .button-3:hover {
+    width: 30vw;
+  }
+
+  .book-now-text2 {
+    font-size: 25px;
+  }
+
+
+
+  .desktop-only-container3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
+
+  .card {
+    width: 50vw;
+  }
+
+  .contact-info {
+    width: 48vw;
+    margin: 0;
+  }
+
+  .contact-text {
+    font-size: 1.2vw;
+  }
+
+  .back-top {
+    text-align: center;
+    color: white;
+    background-color: #7a2012;
+  }
+
+  ::-webkit-scrollbar{
+    width: 14px;
+  }
+  
+  ::-webkit-scrollbar-track{
+    border-radius: 5px;
+    box-shadow: inset .7px .7px 1px #4b4b4b;
+  }
+  
+  ::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+  background: #7a2012;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #7a2012, #7a2012);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #7a2012, #7a2012); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  }
+}
