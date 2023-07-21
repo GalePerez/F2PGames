@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Russo+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 /* Color codes 
 #6c00da
@@ -8,6 +9,38 @@
 * {
     margin: 0;
 }
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    font-size: 3vh;
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+}
+
+
+.navbar-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 1vh;
+}
+
+.home {
+    background-color: #6c00da;
+    border-radius: 15px;
+}
+
+.nav-item {
+    color: #e0d625;
+}
+
+.nav-item:hover {
+    background-color: #6c00da;
+    border-radius: 15px;
+}
+
 
 /*------Search START------*/
 form{
@@ -76,15 +109,17 @@ form:valid .fa{
 
 
 a {
+
 }
 
 form:valid a {
   display: block;
 }
 
-body {
-    overflow-x: hidden;
-}
+ /* body {
+       overflow-x: hidden;
+} */
+ 
 
 .container1 {
     position: relative;
@@ -385,6 +420,7 @@ h2 {
    }
    
 /* ----Genre Button END---- */
+
 .discover-text {
     font-family: 'Bebas Neue', sans-serif;
     text-align: center;
@@ -412,4 +448,82 @@ h2 {
     font-family: 'Orbitron', sans-serif;
     font-size: 3.5vw ;
     padding: 20px;
+ }
+
+ @media screen and (min-width:781px){
+    /* -----------NAVBAR-------- */
+    .navbar {
+        display: flex;
+        justify-content: center;
+        height: 11vh;
+        flex-direction: row;
+    }
+    
+    .navbar-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    form {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-40%,-40%);
+    }
+
+    .nav-item {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 2.5vh;
+    }
+
+    /* --------NAVBAR END------- */
+
+    .f2p-text {
+        font-family: 'Press Start 2P', cursive;
+        font-size: 10vh;
+        top: 8vh;
+        left: 40vh;
+        right: 40vh;
+        color: rgba(255, 255, 255, 0.966);
+        text-align: center;
+    }
+
+    h2 {
+        display: none;
+    }
+
+    .container1 {
+        display: none;
+    }
+
+    .popular-text {
+        font-size: 16vh;
+    }
+
+    .discover-text {
+        font-size: 16vh;
+    }
+
+    .genre-text {
+        font-size: 16vh;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .footer-text {
+        font-size: 1.2vw;
+    }
+
+}
+ @media screen and (min-width:519px) {
+    .container1 {
+        display: none;
+    }
+
  }
