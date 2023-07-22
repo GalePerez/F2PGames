@@ -1,33 +1,4 @@
 
-//genre dropdown 
-
-// const genDrop = document.getElementById('genre-dropdown')
-// const titleElement = document.createElement('h1');
-// titleElement.classList.add('text-light');
-// const genContainer = document.createElement('div');
-// genContainer.classList.add('text-light');
-// const labelElement = document.createElement('label');
-// labelElement.setAttribute('for', 'genre');
-// labelElement.textContent = 'Genres: ';
-// const selectElement = document.createElement('select');
-// selectElement.setAttribute('id', 'genre');
-// selectElement.setAttribute('name', 'genre');
-
-// //Append Elements
-// genDrop.appendChild(titleElement);
-// genDrop.appendChild(genContainer);
-// genContainer.appendChild(labelElement);
-// genContainer.appendChild(selectElement);
-
-// for (let gen=0; gen < genres.length; gen++) {
-
-//     const optionElement = document.createElement('option');
-//     optionElement.textContent = genres[gen];
-//     optionElement.setAttribute('value', genres[gen])
-//     selectElement.appendChild(optionElement);  
-// }
-
-
 const dropContainer = document.getElementById('genre-dropdown');
 const dropDown = document.createElement('div');
 dropDown.innerHTML = `
