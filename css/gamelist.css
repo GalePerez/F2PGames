@@ -33,7 +33,7 @@
 
 }
 
-#all-icons {
+#all-icons, #mmo-list {
     margin: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -49,6 +49,7 @@
     height: 10rem;
 
 }
+
 
 .navbar {
     display: flex;
