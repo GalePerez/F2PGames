@@ -152,30 +152,138 @@ const mmoGenre = () => {
           
           mmoList.appendChild(mmoDiv);
           mmoDiv.appendChild(mmoImage);
+
+          
           
         }
       })
     })
 }
 
+const rpgGenre = () => {
+  fetch(url,options)
+    .then((res) => res.json())
+    .then(data => {
+      data.forEach(element => {
+        if (element.genre === 'MMORPG') {
+          const allIcon = document.getElementById('all-icons');
+          allIcon.classList.add('d-none');
+          const mmoIcons = document.getElementById('mmo-list');
+          mmoIcons.classList.add('d-none');
+          const shooterIcon = document.getElementById('shooter-list');
+          shooterIcon.classList.add('d-none');
+          const stratIcon = document.getElementById('strategy-list');
+          stratIcon.classList.add('d-none');
+          const mobaIcon = document.getElementById('moba-list');
+          mobaIcon.classList.add('d-none');
+          const raceIcon = document.getElementById('racing-list');
+          raceIcon.classList.add('d-none');
+          const sportsIcon = document.getElementById('sports-list');
+          sportsIcon.classList.add('d-none');
+          const socialIcon = document.getElementById('social-list');
+          socialIcon.classList.add('d-none');
+          const fightIcon = document.getElementById('fighting-list');
+          fightIcon.classList.add('d-none');
+          const cardGameIcon = document.getElementById('cardgame-list');
+          cardGameIcon.classList.add('d-none');
+
+
+          const rpgList = document.getElementById('mmorpg-list')
+          const rpgDiv = document.createElement('div');
+          rpgDiv.classList.add('mmo-card')
+          rpgDiv.classList.add('card');
+          const rpgImage = document.createElement('img');
+          rpgImage.classList.add('card-img')
+          rpgImage.setAttribute('src', `${element.thumbnail}`)
+          
+          rpgList.appendChild(rpgDiv);
+          rpgDiv.appendChild(rpgImage);
+
+          
+          
+        }
+      })
+    })
+}
+
+const disable = () => {
+  document.getElementById('disable').disabled =true
+}
+
+const applied = () => {
+  disable();
+  // mmoGenre();
+  rpgGenre();
+  
+}
 
 
 
 
-const genres = ['MMO', 'MMORPG', 'Shooter', 'Strategy', 'MOBA',
-  'Racing' ,'Sports', 'Social', 'Fighting', 'Cardgames'];
-
-
-
-for (let i=0; i < genres.length; i++) {
+//genre List 
 
   const genreList = document.getElementById('genre-list');
-  const buttonGenre = document.createElement('button');
-  buttonGenre.classList.add('btn', 'btn-primary');  
-  genreList.appendChild(buttonGenre);
-  buttonGenre.textContent = genres[i]; 
-  buttonGenre.onclick = mmoGenre
+
+  const mmoList = document.createElement('button');
+  mmoList.classList.add('btn', 'btn-primary');  
+  mmoList.setAttribute('id', 'disable')
+  mmoList.textContent = 'MMO'
+  mmoList.onclick = applied
+
+  const rpgList = document.createElement('button');
+  rpgList.classList.add('btn', 'btn-primary');  
+  rpgList.setAttribute('id', 'disable')
+  rpgList.textContent = 'MMORPG'
+  rpgList.onclick = applied
   
+  const shooterList = document.createElement('button');
+  shooterList.classList.add('btn', 'btn-primary');  
+  shooterList.setAttribute('id', 'disable')
+  shooterList.textContent = 'SHOOTER'
 
-};
+  const stratList = document.createElement('button');
+  stratList.classList.add('btn', 'btn-primary');  
+  stratList.setAttribute('id', 'disable')
+  stratList.textContent = 'STRATEGY'
 
+  const mobaList = document.createElement('button');
+  mobaList.classList.add('btn', 'btn-primary');  
+  mobaList.setAttribute('id', 'disable')
+  mobaList.textContent = 'MOBA'
+
+  const raceList = document.createElement('button');
+  raceList.classList.add('btn', 'btn-primary');  
+  raceList.setAttribute('id', 'disable')
+  raceList.textContent = 'RACING'
+
+  const sportsList = document.createElement('button');
+  sportsList.classList.add('btn', 'btn-primary');  
+  sportsList.setAttribute('id', 'disable')
+  sportsList.textContent = 'SPORTS'
+
+  const socialList = document.createElement('button');
+  socialList.classList.add('btn', 'btn-primary');  
+  socialList.setAttribute('id', 'disable')
+  socialList.textContent = 'SOCIAL'
+
+  const fightingList = document.createElement('button');
+  fightingList.classList.add('btn', 'btn-primary');  
+  fightingList.setAttribute('id', 'disable')
+  fightingList.textContent = 'FIGHTING'
+
+  const cardList = document.createElement('button');
+  cardList.classList.add('btn', 'btn-primary');  
+  cardList.setAttribute('id', 'disable')
+  cardList.textContent = 'CARD GAME'
+
+
+  genreList.appendChild(mmoList);
+  genreList.appendChild(rpgList);
+  genreList.appendChild(shooterList);
+  genreList.appendChild(stratList);
+  genreList.appendChild(mobaList);
+  genreList.appendChild(raceList);
+  genreList.appendChild(sportsList);
+  genreList.appendChild(socialList);
+  genreList.appendChild(fightingList);
+  genreList.appendChild(cardList);
