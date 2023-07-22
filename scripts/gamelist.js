@@ -163,54 +163,54 @@ const applied = () => {
   const genreList = document.getElementById('genre-list');
 
   const mmoList = document.createElement('button');
-  mmoList.classList.add('btn', 'btn-primary');  
+  mmoList.classList.add('btn', 'btn-primary', 'button');
   mmoList.setAttribute('id', 'disable')
   mmoList.textContent = 'MMO'
   mmoList.onclick = applied
 
   const rpgList = document.createElement('button');
-  rpgList.classList.add('btn', 'btn-primary');  
+  rpgList.classList.add('btn', 'btn-primary', 'button');  
   rpgList.setAttribute('id', 'disable')
   rpgList.textContent = 'MMORPG'
   rpgList.onclick = applied
   
   const shooterList = document.createElement('button');
-  shooterList.classList.add('btn', 'btn-primary');  
+  shooterList.classList.add('btn', 'btn-primary', 'button');  
   shooterList.setAttribute('id', 'disable')
   shooterList.textContent = 'SHOOTER'
 
   const stratList = document.createElement('button');
-  stratList.classList.add('btn', 'btn-primary');  
+  stratList.classList.add('btn', 'btn-primary', 'button');  
   stratList.setAttribute('id', 'disable')
   stratList.textContent = 'STRATEGY'
 
   const mobaList = document.createElement('button');
-  mobaList.classList.add('btn', 'btn-primary');  
+  mobaList.classList.add('btn', 'btn-primary', 'button');  
   mobaList.setAttribute('id', 'disable')
   mobaList.textContent = 'MOBA'
 
   const raceList = document.createElement('button');
-  raceList.classList.add('btn', 'btn-primary');  
+  raceList.classList.add('btn', 'btn-primary', 'button');  
   raceList.setAttribute('id', 'disable')
   raceList.textContent = 'RACING'
 
   const sportsList = document.createElement('button');
-  sportsList.classList.add('btn', 'btn-primary');  
+  sportsList.classList.add('btn', 'btn-primary', 'button');  
   sportsList.setAttribute('id', 'disable')
   sportsList.textContent = 'SPORTS'
 
   const socialList = document.createElement('button');
-  socialList.classList.add('btn', 'btn-primary');  
+  socialList.classList.add('btn', 'btn-primary', 'button');  
   socialList.setAttribute('id', 'disable')
   socialList.textContent = 'SOCIAL'
 
   const fightingList = document.createElement('button');
-  fightingList.classList.add('btn', 'btn-primary');  
+  fightingList.classList.add('btn', 'btn-primary', 'button');  
   fightingList.setAttribute('id', 'disable')
   fightingList.textContent = 'FIGHTING'
 
   const cardList = document.createElement('button');
-  cardList.classList.add('btn', 'btn-primary');  
+  cardList.classList.add('btn', 'btn-primary', 'button');  
   cardList.setAttribute('id', 'disable')
   cardList.textContent = 'CARD GAME'
 
