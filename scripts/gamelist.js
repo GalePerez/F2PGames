@@ -1,35 +1,3 @@
-<<<<<<< HEAD
-//genre-list button
-
-const genres = ['MMO', 'MMORPG', 'Shooter', 'Strategy', 'MOBA',
-  'Racing' ,'Sports', 'Social', 'Fighting', 'Cardgames'];
-
-
-
-for (let i=0; i < genres.length; i++) {
-
-const genreList = document.getElementById('genre-list');
-const buttonGenre = document.createElement('button');
-buttonGenre.classList.add('button');
-genreList.appendChild(buttonGenre);
-buttonGenre.textContent = genres[i];
-
-};
-
-//genre dropdown 
-/*
-const genDrop = document.getElementById('genre-dropdown')
-const titleElement = document.createElement('h1');
-titleElement.classList.add('text-light');
-const genContainer = document.createElement('div');
-genContainer.classList.add('text-light');
-const labelElement = document.createElement('label');
-labelElement.setAttribute('for', 'genre');
-labelElement.textContent = 'Genres: ';
-const selectElement = document.createElement('select');
-selectElement.setAttribute('id', 'genre');
-selectElement.setAttribute('name', 'genre');
-=======
 
 //genre dropdown 
 
@@ -44,7 +12,6 @@ selectElement.setAttribute('name', 'genre');
 // const selectElement = document.createElement('select');
 // selectElement.setAttribute('id', 'genre');
 // selectElement.setAttribute('name', 'genre');
->>>>>>> 19016a60dd83a6d3247d8279bf15f1462723e406
 
 // //Append Elements
 // genDrop.appendChild(titleElement);
@@ -60,7 +27,7 @@ selectElement.setAttribute('name', 'genre');
 //     selectElement.appendChild(optionElement);  
 // }
 
-*/
+
 const dropContainer = document.getElementById('genre-dropdown');
 const dropDown = document.createElement('div');
 dropDown.innerHTML = `
