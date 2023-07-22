@@ -16,7 +16,7 @@
 
 }
 
-#all-icons, #mmo-list {
+#all-icons, #mmo-list, #mmorpg-list {
     margin: 10px;
     display: flex;
     flex-wrap: wrap;
