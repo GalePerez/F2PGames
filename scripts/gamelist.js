@@ -9,14 +9,14 @@ for (let i=0; i < genres.length; i++) {
 
 const genreList = document.getElementById('genre-list');
 const buttonGenre = document.createElement('button');
-buttonGenre.classList.add('btn', 'btn-primary');
+buttonGenre.classList.add('button');
 genreList.appendChild(buttonGenre);
 buttonGenre.textContent = genres[i];
 
 };
 
 //genre dropdown 
-
+/*
 const genDrop = document.getElementById('genre-dropdown')
 const titleElement = document.createElement('h1');
 titleElement.classList.add('text-light');
@@ -43,6 +43,31 @@ for (let gen=0; gen < genres.length; gen++) {
     selectElement.appendChild(optionElement);  
 }
 
+*/
+const dropContainer = document.getElementById('genre-dropdown');
+const dropDown = document.createElement('div');
+dropDown.innerHTML = `
+    <div class="dropdown">
+      <button class="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Genre
+      </button>
+      <ul class="dropdown-menu">
+
+        <li><a class="dropdown-item" href="#">MMO</a></li>
+        <li><a class="dropdown-item" href="#">MMORPG</a></li>
+        <li><a class="dropdown-item" href="#">Shooter</a></li>
+        <li><a class="dropdown-item" href="#">Strategy</a></li>
+        <li><a class="dropdown-item" href="#">MOBA</a></li>
+        <li><a class="dropdown-item" href="#">Racing</a></li>
+        <li><a class="dropdown-item" href="#">Sports</a></li>
+        <li><a class="dropdown-item" href="#">Social</a></li>\
+        <li><a class="dropdown-item" href="#">Fighting</a></li>
+        <li><a class="dropdown-item" href="#">Cardgames</a></li>
+  
+      </ul>
+    </div>`;
+
+    dropContainer.appendChild(dropDown);
 // game content
 
 const url = 'https://free-to-play-games-database.p.rapidapi.com/api/games';

@@ -6,6 +6,23 @@
     margin: 0;
 }
 
+.browse-text {
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    color: #e0d625;
+    font-size: 8vh;
+}
+
+#genre-list {
+    display: none;
+}
+
+#genre-dropdown {
+ display: flex;
+ justify-content: center;
+ margin-right: 2vw;
+}
+
 .browse {
     display: flex;
     justify-content: space-between;
@@ -20,6 +37,7 @@
     margin: 10px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card {
@@ -49,7 +67,7 @@
         margin: 1vh;
 }
 
-.discover {
+.browse-nav {
     background-color: #6c00da;
     border-radius: 15px;
 }
@@ -128,6 +146,40 @@ form:valid .fa{
     color: white;
 }
 
+.button {
+    position: relative;
+    padding: .4em 1.8em;
+    outline: none;
+    border: 1px solid #303030;
+    background: #4b2c80;
+    color: #feffcf;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 15px;
+    overflow: hidden;
+    transition: 0.2s;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 1vh;
+    width: 12rem;
+   }
+   
+  .button:hover {
+    background-color: 0 0 10px #6c00da, 0 0 25px #001eff, 0 0 50px #6c00da;
+    transition-delay: 0.6s;
+   }
+   
+   
+.button:active {
+    background: #6c00da;
+    background: linear-gradient(to top right, #6c00da, #001eff);
+    color: #bfbfbf;
+    box-shadow: 0 0 8px #6c00da, 0 0 8px #001eff, 0 0 8px #6c00da;
+    transition: 0.1s;
+   }
+   
 
 @media screen and (min-width:781px){
     /* -----------NAVBAR-------- */
@@ -159,44 +211,49 @@ form:valid .fa{
 
     /* --------NAVBAR END------- */
 
-    .f2p-text {
-        font-family: 'Press Start 2P', cursive;
-        font-size: 10vh;
-        top: 8vh;
-        left: 40vh;
-        right: 40vh;
-        color: rgba(255, 255, 255, 0.966);
+    .browse-text {
+        font-family: 'Bebas Neue', sans-serif;
         text-align: center;
-    }
-
-    h2 {
-        display: none;
-    }
-
-    .container1 {
-        display: none;
-    }
-
-    .popular-text {
-        font-size: 16vh;
-    }
-
-    .discover-text {
-        font-size: 16vh;
-    }
-
-    .genre-text {
+        color: #e0d625;
         font-size: 12vh;
     }
 
-    .footer {
+    main {
         display: flex;
-        flex-direction: row;
-        justify-content: center;
     }
 
-    .footer-text {
-        font-size: 1.2vw;
+    .browse {
+        background-color: #001eff;
+    }
+
+    #all-icons {
+        display: flex;
+        justify-content: center;
+        background-color: #2d2a3d;
+        border-radius: 20px;
+    }
+
+    .card {
+        overflow: hidden;
+    }
+    
+    .card .card-img {
+        transition: transform .5s;
+    }
+    
+    .card:hover .card-img {
+        transform: scale(1.2);
+    }
+    
+
+    #genre-dropdown {
+        display: none;
+    }
+
+    #genre-list {
+        display: block;
+        position: sticky;
+        top: 0;
     }
 
     ::-webkit-scrollbar{

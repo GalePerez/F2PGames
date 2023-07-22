@@ -19,7 +19,7 @@ const navBar = () => {
 								<a href="#game-container" class="nav-link text-uppercase discover">Discover</a>
 						</li>
 						<li class="nav-item">
-								<a href="./gamelist.html" class="nav-link text-uppercase">Browse</a>
+								<a href="./gamelist.html" class="nav-link text-uppercase browse-nav">Browse</a>
 						</li>
 					</ul>	
 				<form action="">
