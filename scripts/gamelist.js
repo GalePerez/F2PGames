@@ -47,7 +47,7 @@ fetch (url,options)
       cardImage.addEventListener('click', () => {
         window.location.href = element.game_url;
       })
-
+      
       allIcon.appendChild(iconContainer);
       iconContainer.appendChild(cardImage);
 
@@ -67,7 +67,7 @@ fetch (url,options)
     genBtn.textContent = genres[i]
     genList.appendChild(genBtn);
     genBtn.addEventListener('click', () => {
-      document.getElementById()
+      document.getElementById('all-icons')
 
     })
 
