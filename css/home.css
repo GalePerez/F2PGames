@@ -57,7 +57,7 @@ body {
 
 
 /*------Search START------*/
-form{
+form {
     position: relative;
     top: 50%;
     left: 50%;
@@ -73,7 +73,7 @@ form{
     margin-top: 5vh;
 }
 
-input{
+input {
     position: absolute;
     top: 0;
     left: 0;
@@ -539,7 +539,6 @@ h2 {
         margin: 1.5vw;
         margin-top: 10vh;
         margin-left: 7vw;
-        border: solid rgba(164, 7, 255, 0.63);
         border-radius: 50px;
     }
 
@@ -581,10 +580,19 @@ h2 {
 
 
     .popular-text {
-        font-size: 20vh;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 12vh;
         position: absolute;
         z-index: 3;
-        top: 50px;
+        top: 55px;
+        color: rgb(36, 35, 46);
+        background-color: #e0d625;
+        padding-left: 3vw;
+    }
+
+    .popular-text:hover {
+       background-color: #fff200b6;
+       color: rgb(92, 0, 128);
     }
 
     .popular-text {
@@ -648,6 +656,10 @@ h2 {
         font-size: 15vh;
         position: absolute;
         z-index: 3;
+    }
+
+    .discover-text:hover {
+        color: #6c00da;
     }
     
     #game-container {
