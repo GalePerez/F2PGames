@@ -38,3 +38,4 @@ const fetchGames = () => {
 
 
 fetchGames();
+
