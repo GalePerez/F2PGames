@@ -581,10 +581,10 @@ h2 {
 
     .popular-text {
         font-family: 'Orbitron', sans-serif;
-        font-size: 12vh;
+        font-size: 9vh;
         position: absolute;
         z-index: 3;
-        top: 80px;
+        top: 190px;
         color: rgb(36, 35, 46);
         background-color: #e0d625;
         padding-left: 3vw;
