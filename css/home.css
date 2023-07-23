@@ -19,6 +19,13 @@ a:hover {
     color: white;
 }
 
+.cursor {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
 body {
     overflow-x: hidden;
 }
