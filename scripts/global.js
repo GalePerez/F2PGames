@@ -22,8 +22,9 @@ const navBar = () => {
 								<a href="./gamelist.html" class="nav-link text-uppercase browse-nav">Browse</a>
 						</li>
 					</ul>	
-				<form action="">
-				<input type="search" data-search required>
+
+				<form action="" class="search">
+				<input type="search" required>
 				<i class="fa fa-search"></i>
 				</form>	
 			</div>
