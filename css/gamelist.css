@@ -261,7 +261,7 @@ form:valid .fa{
     #genre-list {
         display: block;
         position: sticky;
-        top: 0;
+        top: 10vh;
     }
 
     ::-webkit-scrollbar{
