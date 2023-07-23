@@ -45,7 +45,7 @@ fetch (url,options)
       cardImage.classList.add('card-img');
       cardImage.setAttribute('src',`${element.thumbnail}`);
       cardImage.addEventListener('click', () => {
-        window.location.href = elements.game_url;
+        window.location.href = element.game_url;
       })
 
       allIcon.appendChild(iconContainer);
@@ -54,3 +54,22 @@ fetch (url,options)
     });
   });
 
+// game genres
+
+  const genres = ['All','MMO', 'MMORPG', 'Shooter', 'Strategy', 'MOBA', 'Racing', 'Sports', 'Social',
+    'Fighting', 'Card Games'];
+
+
+  for (let i=0; i<genres.length; i++) {
+    const genList = document.getElementById('genre-list');
+    const genBtn = document.createElement('button');
+    genBtn.classList.add('btn','button','btn-primary')
+    genBtn.textContent = genres[i]
+    genList.appendChild(genBtn);
+    genBtn.addEventListener('click', () => {
+      document.getElementById()
+
+    })
+
+    
+  }
