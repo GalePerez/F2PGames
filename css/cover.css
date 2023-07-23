@@ -25,7 +25,7 @@ a:hover {
 }
 
 .content {
-  z-index: 2;
+  z-index: 1;
   color: #d9ff01c2;
   width: 100%;
   padding: 20px;
@@ -170,6 +170,13 @@ button:hover {
 
 
 @media screen and (min-width:781px){
+  .style1 {
+    position: fixed;
+    z-index: 2;
+    display: block;
+}
+
+  
   .loader {
     z-index: 4;
     position: fixed;
