@@ -28,6 +28,9 @@ const fetchGames = () => {
 								gameImage.setAttribute('src',`${element.thumbnail}`);
 								discoverImage.appendChild(discoverContainer);
 								discoverContainer.appendChild(gameImage);
+								gameImage.addEventListener('click', () => {
+									window.location.href = element.game_url;
+								})
 							}
 
 						});
