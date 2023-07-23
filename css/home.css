@@ -19,12 +19,6 @@ a:hover {
     color: white;
 }
 
-.cursor {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-}
 
 body {
     overflow-x: hidden;
@@ -474,7 +468,7 @@ h2 {
     background-color: #2e005c;
     text-align: center;
     font-family: 'Orbitron', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1rem;
  }
 
  @media screen and (min-width:781px){
@@ -484,6 +478,9 @@ h2 {
         justify-content: center;
         height: 11vh;
         flex-direction: row;
+        position: sticky;
+        top: 0;
+        z-index: 5;
     }
     
     .navbar-buttons {
@@ -506,6 +503,33 @@ h2 {
     }
 
     /* --------NAVBAR END------- */
+    .carousel {
+        margin: 1.5vw;
+        margin-top: 10vh;
+        margin-left: 7vw;
+        border: solid rgba(251, 255, 7, 0.63);
+        border-radius: 50px;
+    }
+
+    .carousel-inner {
+        border-radius: 50px;
+    }
+
+
+    .popular-text {
+        font-size: 20vh;
+        position: absolute;
+        z-index: 3;
+        top: 50px;
+    }
+    
+    h5 {
+        color: rgba(234, 255, 48, 0.774);
+        text-align: left;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 5rem;
+    }
+
 
     .f2p-text {
         font-family: 'Press Start 2P', cursive;
@@ -525,16 +549,22 @@ h2 {
         display: none;
     }
 
-    .popular-text {
-        font-size: 16vh;
-    }
-
     .discover-text {
-        font-size: 16vh;
+        font-size: 15vh;
+        position: absolute;
+        z-index: 3;
+    }
+    
+    #game-container {
+        margin-top: 20vh;
     }
 
     .genre-text {
         font-size: 12vh;
+    }
+
+    .genre-container {
+        background-color: #181225;
     }
 
     .footer {

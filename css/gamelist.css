@@ -6,6 +6,10 @@
     margin: 0;
 }
 
+.discover {
+    display: none;
+}
+
 .browse-text {
     font-family: 'Bebas Neue', sans-serif;
     text-align: center;
@@ -189,6 +193,9 @@ form:valid .fa{
         justify-content: center;
         height: 11vh;
         flex-direction: row;
+        position: sticky;
+        top: 0;
+        z-index: 5;
     }
     
     .navbar-buttons {
@@ -230,7 +237,7 @@ form:valid .fa{
     #all-icons {
         display: flex;
         justify-content: center;
-        background-color: #2d2a3d;
+        background-color: #313033;
         border-radius: 20px;
     }
 
