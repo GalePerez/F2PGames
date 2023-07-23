@@ -537,7 +537,7 @@ h2 {
     /* --------NAVBAR END------- */
     .carousel {
         margin: 1.5vw;
-        margin-top: 10vh;
+        margin-top: 5vh;
         margin-left: 7vw;
         border-radius: 50px;
     }
@@ -584,7 +584,7 @@ h2 {
         font-size: 9vh;
         position: absolute;
         z-index: 3;
-        top: 190px;
+        top: 160px;
         color: rgb(36, 35, 46);
         background-color: #e0d625;
         padding-left: 3vw;
