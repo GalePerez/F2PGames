@@ -29,15 +29,6 @@ const navBar = () => {
 				</form>	
 			</div>
 		</nav>`;
-	
-		const serachInput = document.querySelector("[data-search]")
-
-		let search = []
-
-		serachInput.addEventListener('input', (e) => {
-			const value = e.target.value;
-			console.log(value);
-		})
 
 		
 
