@@ -8,6 +8,7 @@
 */
 * {
     margin: 0;
+    cursor: crosshair;
 }
 
 a {
@@ -19,6 +20,17 @@ a:hover {
     color: white;
 }
 
+.cursor {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+body {
+    /* cursor: crosshair; */
+}
+    
 body {
     overflow-x: hidden;
 }

@@ -170,6 +170,45 @@ button:hover {
 
 
 @media screen and (min-width:781px){
+  .loader {
+    z-index: 4;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #212529;
+    transition: opacity 0.75s, visibility 0.75s;
+  }
+
+  .loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #6c00da;
+    border-top-color: #e0d625;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+  }
+
+  @keyframes loading {
+    from {
+      transform: rotate(0turn);
+    }
+    to {
+      transform: rotate(1turn);
+    }
+    
+  }
+  
   #myVideo {
     z-index: 0;
     position: fixed;
