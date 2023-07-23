@@ -23,13 +23,22 @@ const navBar = () => {
 						</li>
 					</ul>	
 				<form action="">
-				<input type="search" required>
+				<input type="search" data-search required>
 				<i class="fa fa-search"></i>
 				</form>	
 			</div>
 		</nav>`;
-
 	
+		const serachInput = document.querySelector("[data-search]")
+
+		let search = []
+
+		serachInput.addEventListener('input', (e) => {
+			const value = e.target.value;
+			console.log(value);
+		})
+
+		
 
 };
 
