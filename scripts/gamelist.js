@@ -67,7 +67,24 @@ fetch (url,options)
     genBtn.textContent = genres[i]
     genList.appendChild(genBtn);
     genBtn.addEventListener('click', () => {
-      document.getElementById('all-icons')
+      fetch(url, options) 
+        .then((res) => res.json())          
+        .then(data => {
+          const allIcon = document.getElementById('all-icons')
+          allIcon.textContent = '';
+          data.forEach(elements => {
+            if (elements.genre === genres[i]) {
+              const iconContainer = document.createElement('div')
+              iconContainer.classList.add('card');
+              const cardImage = document.createElement('img');
+              cardImage.classList.add('card-img');
+              cardImage.setAttribute('src',`${elements.thumbnail}`);
+              allIcon.appendChild(iconContainer);
+              iconContainer.appendChild(cardImage);
+            }
+            
+          })
+        })
 
     })
 
