@@ -45,7 +45,7 @@ fetch (url,options)
       cardImage.classList.add('card-img');
       cardImage.setAttribute('src',`${element.thumbnail}`);
       cardImage.addEventListener('click', () => {
-        window.location.href = element.game_url;
+        window.location.href = `./game-info.html?id=${element.id}`;
       })
       
       allIcon.appendChild(iconContainer);
