@@ -1,7 +1,9 @@
 const queryString = window.location.search;
-console.log(queryString);
+const urlParams = new URLSearchParams(queryString);
+const gameId =  urlParams.get('id')
 
-const url = 'https://free-to-play-games-database.p.rapidapi.com/api/game?id=452';
+
+const url = (`https://free-to-play-games-database.p.rapidapi.com/api/game?id=${gameId}`)
 const options = {
     method: 'GET',
     headers: {
