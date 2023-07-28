@@ -27,6 +27,9 @@ fetch(url, options)
         const gameGenre = document.getElementById('game-genres')
         gameGenre.textContent = data.genre
 
+        const gameLink = document.getElementById('game-link')
+        gameLink.textContent = data.game_url
+
 
 
 

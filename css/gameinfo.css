@@ -1,59 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Russo+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
 
 * {
     margin: 0;
 }
 
-.discover {
-    display: none;
+a {
+    text-decoration: none;
+    color: rgb(238, 255, 0);
 }
 
-.browse-text {
-    font-family: 'Bebas Neue', sans-serif;
-    text-align: center;
-    color: #e0d625;
-    font-size: 8vh;
+
+a:hover {
+    color: rgb(128, 146, 49);
 }
 
-#genre-list {
-    display: none;
+
+body {
+    overflow-x: hidden;
 }
-
-#genre-dropdown {
- display: flex;
- justify-content: center;
- margin-right: 2vw;
-}
-
-.browse {
-    display: flex;
-    justify-content: space-between;
-}
-
-#genre {
-    margin-top: 10px;
-
-}
-
-#all-icons, #mmo-list, #mmorpg-list {
-    margin: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.card {
-    margin: 10px;
-}
-
-.card-img {
-    width: 20rem;
-    height: 10rem;
-
-}
-
 
 .navbar {
     display: flex;
@@ -151,40 +119,30 @@ form:valid .fa{
     color: white;
 }
 
-.button {
-    position: relative;
-    padding: .4em 1.8em;
-    outline: none;
-    border: 1px solid #303030;
-    background: #4b2c80;
-    color: #feffcf;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+h1 {
     font-family: 'Orbitron', sans-serif;
-    font-size: 15px;
-    overflow: hidden;
-    transition: 0.2s;
-    border-radius: 20px;
-    cursor: pointer;
-    font-weight: bold;
-    margin: 1vh;
-    width: 12rem;
-   }
-   
-  .button:hover {
-    background-color: 0 0 10px #6c00da, 0 0 25px #001eff, 0 0 50px #6c00da;
-    transition-delay: 0.6s;
-   }
-   
-   
-.button:active {
-    background: #6c00da;
-    background: linear-gradient(to top right, #6c00da, #001eff);
-    color: #bfbfbf;
-    box-shadow: 0 0 8px #6c00da, 0 0 8px #001eff, 0 0 8px #6c00da;
-    transition: 0.1s;
-   }
-   
+    text-align: center;
+}
+
+h4 {
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.desktop-container1 {
+    width: 100vw;
+
+}
+
+#game-img {
+    width: 100vw;
+    height: 30vh;
+    padding: 2vw;
+    border-radius: 30px;
+    opacity: 80%;
+}
+
 
 @media screen and (min-width:781px){
     /* -----------NAVBAR-------- */
@@ -196,7 +154,39 @@ form:valid .fa{
         position: sticky;
         top: 0;
         z-index: 5;
+
     }
+
+    .navbar {
+        -webkit-animation-name: slideInDown;
+        animation-name: slideInDown;
+        -webkit-animation-duration: 1s;
+        animation-duration: 3s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        }
+        @-webkit-keyframes slideInDown {
+        0% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+        visibility: visible;
+        }
+        100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        }
+        }
+        @keyframes slideInDown {
+        0% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+        visibility: visible;
+        }
+        100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        }
+        } 
     
     .navbar-buttons {
         display: flex;
@@ -219,47 +209,52 @@ form:valid .fa{
 
     /* --------NAVBAR END------- */
 
-    .browse-text {
-        font-family: 'Bebas Neue', sans-serif;
-        text-align: center;
-        color: #e0d625;
-        font-size: 12vh;
+    .back {
+        margin-left: 5vw;
+        margin-bottom: 2vh;
+        font-size: 20px;
     }
 
-    main {
+    .info-container {
         display: flex;
+        flex-wrap: wrap;
     }
 
-
-
-    #all-icons {
-        display: flex;
-        justify-content: center;
-        background-color: #313033;
-        border-radius: 20px;
-    }
-
-    .card {
-        overflow: hidden;
-    }
-    
-    .card .card-img {
-        transition: transform .5s;
-    }
-    
-    .card:hover .card-img {
-        transform: scale(1.2);
-    }
-    
-
-    #genre-dropdown {
-        display: none;
-    }
-
-    #genre-list {
-        display: block;
+    .desktop-container1 {
+        width: 50vw;
         position: sticky;
-        top: 10vh;
+        top: 0;
+    }
+
+    #game-img {
+        width: 50vw;
+        height: 45vh;
+        opacity: 80%;
+        padding: 0 3vw ;
+        border-radius: 10%;
+        margin-bottom: 20px;
+    }
+
+
+    .desktop-container2 {
+        width: 45vw;
+    }
+
+    .description {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 35px;
+    }
+
+    #game-description {
+        font-size: 20px;
+        line-height: 5px;
+        font-family: 'Nunito', sans-serif;
+    }
+
+    .genre {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 25px;
+        
     }
 
     ::-webkit-scrollbar{
@@ -278,7 +273,4 @@ form:valid .fa{
       background: linear-gradient(to right, #e0d625, #e0d625); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
       
       }
-
-
 }
- 
