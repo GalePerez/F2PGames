@@ -33,7 +33,7 @@ const fetchGames = () => {
           discoverImage.appendChild(discoverContainer);
           discoverContainer.appendChild(gameImage);
           gameImage.addEventListener("click", () => {
-            window.location.href = `./game-info.html?id=${elements.id}`;
+            window.location.href = `./game-info.html?id=${element.id}`;
           });
         }
       });
